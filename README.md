@@ -25,7 +25,7 @@ This is a solution to the [Testimonials Grid Section Challenge on Frontend Mento
 ### Links
 
 - Solution URL: []()
-- Live Site URL: []()
+- Live Site URL: [https://rafo38kh.github.io/testimonials-grid-section/](https://rafo38kh.github.io/testimonials-grid-section/)
 
 ## My process
 
@@ -34,6 +34,7 @@ This is a solution to the [Testimonials Grid Section Challenge on Frontend Mento
 - Semantic HTML5 markup
 - SCSS custom properties
 - CSS Flexbox
+- CSS Grid
 - Mobile-first workflow
 
 ## Author
