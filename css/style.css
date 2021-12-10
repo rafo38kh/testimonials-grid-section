@@ -16,4 +16,99 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
+.testimonial__container {
+  padding: 10rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 1140px) {
+  .testimonial__container {
+    padding: 17rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.testimonial__box-container {
+  padding: 3rem 3rem;
+}
+
+.testimonial {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.testimonial__box {
+  border-radius: 1rem;
+}
+.testimonial__box--daniel {
+  background-color: #7541c8;
+  color: white;
+}
+.testimonial__box--jonathan {
+  background-color: #48556a;
+  color: white;
+}
+.testimonial__box--jeanette {
+  background-color: white;
+}
+.testimonial__box--patrick {
+  background-color: #19212e;
+  color: white;
+}
+.testimonial__box--kira {
+  background-color: white;
+}
+@media (min-width: 1140px) {
+  .testimonial__box--daniel {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .testimonial__box--jonathan {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .testimonial__box--jeanette {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .testimonial__box--patrick {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+  .testimonial__box--kira {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+}
+.testimonial__person {
+  display: flex;
+  gap: 2rem;
+}
+.testimonial__img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid #cfcfcf;
+}
+.testimonial__name {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.testimonial__txt {
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+.testimonial__description {
+  padding-right: 4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+.testimonial__paragraph {
+  padding-right: 3.5rem;
+  opacity: 0.7;
+}
+
 /*# sourceMappingURL=style.css.map */
