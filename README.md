@@ -24,7 +24,7 @@ This is a solution to the [Testimonials Grid Section Challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/testimonials-grid-section-with-bem-css-grid-and-flexbox-XSv7Jnizh](https://www.frontendmentor.io/solutions/testimonials-grid-section-with-bem-css-grid-and-flexbox-XSv7Jnizh)
 - Live Site URL: [https://rafo38kh.github.io/testimonials-grid-section/](https://rafo38kh.github.io/testimonials-grid-section/)
 
 ## My process
