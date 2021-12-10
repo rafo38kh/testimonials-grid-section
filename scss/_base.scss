@@ -20,7 +20,11 @@ html {
 }
 
 body {
+  background-color: $color-lightBlue;
   font-size: 1.6rem;
   font-family: "Barlow Semi Condensed", sans-serif;
-  // - Weights: 500, 600
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
 }

@@ -5,10 +5,15 @@
   font-weight: 500;
   &__box {
     border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
     &--daniel {
       background-color: $color-violet;
       color: $color-White;
+      background-image: url(../images/bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      background-position: 21rem 0rem;
     }
 
     &--jonathan {
@@ -18,6 +23,7 @@
 
     &--jeanette {
       background-color: $color-White;
+      color: $color-darkBlue;
     }
 
     &--patrick {
@@ -27,10 +33,13 @@
 
     &--kira {
       background-color: $color-White;
+      color: $color-darkBlue;
     }
 
-    @media (min-width: 1140px) {
+    @media (min-width: 810px) {
       &--daniel {
+        background-position: right 7.5rem top 0rem;
+        background-size: 11.5rem;
         grid-column: 1/3;
         grid-row: 1/2;
       }
@@ -51,6 +60,27 @@
       }
 
       &--kira {
+        grid-column: 1/4;
+        grid-row: 3/4;
+      }
+    }
+
+    @media (min-width: 1140px) {
+      &--daniel {
+        background-position: right 7.5rem top 0rem;
+        background-size: 11.5rem;
+      }
+
+      //   &--jonathan {
+      //   }
+
+      //   &--jeanette {
+      //   }
+
+      //   &--patrick {
+      //   }
+
+      &--kira {
         grid-column: 4/5;
         grid-row: 1/3;
       }
@@ -69,8 +99,8 @@
     border: 1px solid $color-lightGray;
   }
 
-  &__info {
-  }
+  //   &__info {
+  //   }
 
   &__name {
     font-size: 1.3rem;
@@ -87,10 +117,47 @@
     font-size: 1.8rem;
     font-weight: 600;
     margin: 2rem 0;
+    @media (min-width: 1140px) {
+      padding: 0;
+      font-size: 2.2rem;
+    }
   }
 
   &__paragraph {
     padding-right: 3.5rem;
     opacity: 0.7;
+    @media (min-width: 1140px) {
+      font-size: 1.4rem;
+      line-height: 1.4;
+      padding: 0;
+      &--jeanette {
+        color: $color-blue;
+      }
+      &--kira {
+        color: $color-blue;
+      }
+    }
+  }
+}
+
+.attribution {
+  width: 100%;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0 1rem 0;
+  color: $color-darkBlue;
+  transition: all 0.2s;
+
+  &__link:link,
+  &__link:visited {
+    text-transform: uppercase;
+    color: $color-violet;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-darkBlue;
   }
 }
