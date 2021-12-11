@@ -103,8 +103,24 @@ body {
   .testimonial__box--daniel {
     background-position: right 7.5rem top 0rem;
     background-size: 11.5rem;
+    transform: translateX(-100rem);
+    animation: come-in-left 0.5s ease-out alternate forwards;
+  }
+  .testimonial__box--jonathan {
+    transform: translateY(-50rem);
+    animation: come-in-top 0.5s ease-out 0.5s alternate forwards;
+  }
+  .testimonial__box--jeanette {
+    transform: translateY(50rem);
+    animation: come-in-left 0.5s ease-out 1s alternate forwards;
+  }
+  .testimonial__box--patrick {
+    transform: translateY(50rem);
+    animation: come-in-bottom 0.5s ease-out 1s alternate forwards;
   }
   .testimonial__box--kira {
+    transform: translateX(50rem);
+    animation: come-in-right 0.5s ease-out 1.5s alternate forwards;
     grid-column: 4/5;
     grid-row: 1/3;
   }
@@ -173,6 +189,39 @@ body {
 }
 .attribution__link:hover, .attribution__link:active {
   color: #19212e;
+}
+
+@keyframes come-in-left {
+  0% {
+    transform: translateX(-100rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes come-in-top {
+  0% {
+    transform: translateY(-50rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes come-in-bottom {
+  0% {
+    transform: translateY(50rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes come-in-right {
+  0% {
+    transform: translateX(50rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
